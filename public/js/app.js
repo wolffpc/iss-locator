@@ -15,15 +15,15 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}', {foo: 'b
 
 // Map update function
 function issLocation() {
-    fetch('http://api.open-notify.org/iss-now.json').then((res) => {
+    fetch('/iss').then((res) => {
         res.json().then((data) => {
             if (data.error) {
                 console.log(data.error)
             } else {
-                long.textContent = data.iss_position.longitude
-                lat.textContent = data.iss_position.latitude
-                mymap.setView([data.iss_position.latitude, data.iss_position.longitude], 2)
-                marker.setLatLng([data.iss_position.latitude, data.iss_position.longitude])
+                long.textContent = data.location.longitude
+                lat.textContent = data.location.latitude
+                mymap.setView([data.location.latitude, data.location.longitude], 2)
+                marker.setLatLng([data.location.latitude, data.location.longitude])
             }
         })
     })

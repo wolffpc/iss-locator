@@ -1,6 +1,7 @@
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
+const iss = require('./utils/iss')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -36,6 +37,18 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
         name: 'Peter Wolff'
+    })
+})
+
+app.get('/iss', (req, res) => {
+    iss((error, location) => {
+        if(error) {
+            return res.send({ error })
+        }
+
+        res.send({
+            location
+        })
     })
 })
 
