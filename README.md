@@ -13,7 +13,7 @@ The positional data comes from [open-notify.org](http://open-notify.org/) and th
 Before you begin, ensure you have met the following requirements:
 * You have `npm` installed.
 
-## Installing <project_name>
+## Installing ISS Locator
 
 To setup ISS Locator locally, follow these steps:
 
