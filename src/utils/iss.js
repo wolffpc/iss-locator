@@ -13,10 +13,6 @@ const issLocation = (callback) => {
                     latitude: data.iss_position.latitude
                 }
                 callback(undefined, myLocation)
-                // long.textContent = data.iss_position.longitude
-                // lat.textContent = data.iss_position.latitude
-                // mymap.setView([data.iss_position.latitude, data.iss_position.longitude], 2)
-                // marker.setLatLng([data.iss_position.latitude, data.iss_position.longitude])
             }
         })
     })
