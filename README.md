@@ -4,9 +4,11 @@
 ![David](https://img.shields.io/david/wolffpc/iss-locator)
 
 
-ISS Locator is a website that allows users to do see the current location of the Internation Space Station on a map.
+ISS Locator is a website that allows users to see the current location of the Internation Space Station on a map.
 
 The positional data comes from [open-notify.org](http://open-notify.org/) and the map is powered by [OpenStreetMap](https://www.openstreetmap.org) and [Leaflet](https://leafletjs.com/).
+
+You can visit the ISS Locator website live [here](https://wolffp-iss-locator.herokuapp.com/).
 
 ## Prerequisites
 
